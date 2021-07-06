@@ -61,7 +61,7 @@ export class ListingsService {
   }
   
   deleteListing(id: string): Observable<any> {
-    return new Observable<Listing[]>( observer => {
+    return new Observable<any>( observer => {
       this.auth.user.subscribe(user => {
         user && user.getIdToken().then(token => {
           if (user && token) {
