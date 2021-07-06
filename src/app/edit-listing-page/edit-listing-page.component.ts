@@ -29,8 +29,6 @@ export class EditListingPageComponent implements OnInit {
     this.listingsService.editListing(this.listing.id, name, description, price)
       .subscribe( () => {
         this.router.navigateByUrl('/my-listings');
-        this.router.navigateByUrl('/my-listings')
-
     });
   }
 
